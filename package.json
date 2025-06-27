@@ -1,0 +1,32 @@
+{
+  "name": "@cmskit/common",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "description": "Common utilities for the cmskit project",
+  "keywords": [
+    "cmskit",
+    "common",
+    "utilities"
+  ],
+  "author": {
+    "name": "Matthew Davis",
+    "email": "matthew@matthewdavis.io"
+  },
+  "scripts": {
+    "release": "npm version from-git && npm publish --access public",
+    "test": "vitest run",
+    "test:watch": "vitest --watch",
+    "dev:sync": "npm run build && npm link",
+    "dev:sync:watch": "find . -name '*.ts' | entr -c npm run dev:sync"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}
