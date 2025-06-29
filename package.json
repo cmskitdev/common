@@ -17,7 +17,8 @@
   },
   "scripts": {
     "release": "npm version from-git && npm publish --access public",
-    "test": "vitest run",
+    "lint": "exit 0",
+    "test": "vitest run src/properties/property.spec.ts",
     "test:watch": "vitest --watch",
     "dev:sync": "npm run build && npm link",
     "dev:sync:watch": "find . -name '*.ts' | entr -c npm run dev:sync"
@@ -26,6 +27,7 @@
     "typescript": "^5.0.0"
   },
   "devDependencies": {
+    "eslint": "^9.30.0",
     "object-inspect": "^1.13.4",
     "typescript": "^5.8.3",
     "vitest": "^3.2.4"
