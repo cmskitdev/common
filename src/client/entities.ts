@@ -4,4 +4,4 @@
  * @category Clients
  * @group Entity Types
  */
-export { Entity, EntityData, EntityType } from "../content/entity";
+export { Entity, EntityType, type EntityData } from "../content/entity";

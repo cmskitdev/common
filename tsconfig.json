@@ -8,15 +8,13 @@
     "strict": true,
     "strictNullChecks": false,
     "target": "ES2022",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "sourceMap": true,
-    "useDefineForClassFields": true,
-    "allowJs": false,
-    "checkJs": false,
-    "isolatedModules": true,
-    "allowArbitraryExtensions": true
+    "baseUrl": ".",
+    "paths": {
+      "$client/*": ["./src/client/*"],
+      "$content": ["./src/content"],
+      "$content/*": ["./src/content/*"]
+    }
   },
   "baseUrl": ".",
   "paths": {

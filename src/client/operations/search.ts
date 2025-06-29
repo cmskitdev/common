@@ -1,5 +1,5 @@
-import { EntityData } from "../entities";
-import { Response } from "./response";
+import { type EntityData } from "../entities";
+import { type Response } from "./response";
 
 /**
  * Search operation function type.

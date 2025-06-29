@@ -1,4 +1,4 @@
-import { Entity, EntityData, EntityType } from "../entities";
+import { Entity, type EntityData, EntityType } from "../entities";
 
 /**
  * Type for the response of the get operation.
