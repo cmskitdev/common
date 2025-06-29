@@ -1,10 +1,10 @@
 /**
- * Operations namespace containing get, list, and search operations.
+ * Operations types for get, list, and search operations.
  * @category Clients
  */
-export namespace operations {
-  export { type Get } from "./get";
-  export { type Response } from "./response";
-  export { type Search } from "./search";
-  export { type List } from "./list";
-}
+import { type Get } from "./get";
+import { type List } from "./list";
+import { type Response } from "./response";
+import { type Search } from "./search";
+
+export type { Get, List, Response, Search };
