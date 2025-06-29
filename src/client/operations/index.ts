@@ -3,8 +3,8 @@
  * @category Clients
  */
 import { type Get } from "./get";
-import { type List } from "./list";
+import { type Args as ListArgs, type Operation as ListOperation } from "./list";
 import { type Response } from "./response";
 import { type Search } from "./search";
 
-export type { Get, List, Response, Search };
+export type { Get, ListArgs, ListOperation, Response, Search };
