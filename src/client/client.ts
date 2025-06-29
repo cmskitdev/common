@@ -6,5 +6,6 @@ import { EntityType } from "./entities";
  */
 export interface Client {
   search: (query: string, type: EntityType) => Promise<any>;
+  list: (type: EntityType) => Promise<any>;
   get: (id: string, type: EntityType) => Promise<any>;
 }
